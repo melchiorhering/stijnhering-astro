@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon";
+
+const today = new Date();
+---
+
+
+
+<footer class="text-center px-25">
+	<div class="flex text-center p-10 justify-center gap-24 py-3 text-gray-600">
+		<a class="h-10 w-10 text-black" href={"https://www.linkedin.com/in/stijn-hering-75aa3917b/"}>
+		  <Icon name="bi:linkedin" />
+		</a>
+		<a class="h-10 w-10 text-black" href={"https://github.com/melchiorhering"}>
+		  <Icon  name="bi:github" />
+		</a>
+		<a class="h-10 w-10 text-black" href={"mailto:stijn@hering.nl"}>
+		  <Icon name="ic:round-alternate-email" />
+		</a>
+	  </div>
+	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+</footer>
+<!-- <style>
+	footer {
+		padding: 25px;
+		text-align: center;
+	}
+</style> -->

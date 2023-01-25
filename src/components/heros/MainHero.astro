@@ -1,0 +1,59 @@
+---
+import {Icon} from 'astro-icon'
+// import { SITE_TITLE } from '../config';
+---
+
+
+<>
+<section class="relative border-y-2 border-gray-200 w-full">
+  <div class="">
+    <div class="absolute w-full h-full bg-hero-whirl bg-cover bg-center bg-no-repeat opacity-20 backdrop-blur-sm -z-50 px-6 lg:px-8"></div>
+    <div class="mx-auto max-w-3xl pt-48 pb-40">
+      <div>
+        {/* Banner */}
+        <div class="mb-8 flex justify-center">
+          <div class="flex overflow-hidden rounded-xl py-1.5 px-4 text-sm leading-6 bg-white text-gray-900 border border-gray-900/10 hover:ring-gray-900/20 hover:bg-gray-100 hover:text-gray-800 hover:drop-shadow focus:ring focus:ring-gray-900/20 focus:bg-gray-300">
+            <span class="text-gray-600 select-none">
+              Announcing our next round of funding.{" "}
+              <a href="#" class="font-semibold text-cyan-600">
+                <span aria-hidden="true" />
+                Read more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div>
+          {/* Title */}
+          <h1 class="text-4xl font-bold tracking-tight text-center md:text-6xl">
+            Welcome!
+          </h1>
+          {/* Subtext */}
+          <p class="mt-6 text-lg leading-8 text-gray-600 text-center">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+            qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+            occaecat fugiat aliqua.
+          </p>
+          {/* Buttons */}
+          <div class="mt-8 flex gap-x-4 justify-center">
+            <button class="flex items-center space-x-2 rounded-lg bg-gradient-to-r outline-none from-cyan-500 to-teal-500 text-white px-10 py-1.5 font-semibold leading-7 shadow-sm ring-1 ring-teal-500 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-teal-600 hover:ring-teal-600 hover:shadow-md hover:drop-shadow focus:ring-1 focus:ring-teal-800 focus:bg-gradient-to-r focus:from-cyan-700 focus:to-teal-700">
+              <span>Curriculum Vitae</span>
+              <div class="animate-slowBounce h-4 w-4 text-white">
+                <Icon name="ph:download-simple-bold" />
+                {/* animate-bounce ease-out */}
+              </div>
+            </button>
+            <button class="inline-block rounded-lg px-8 py-1.5 text-base font-semibold leading-7 bg-white text-gray-900 border border-gray-900/10 hover:ring-gray-900/20 hover:bg-gray-100 hover:text-gray-800 hover:drop-shadow focus:ring-1 focus:ring-gray-900/20 focus:bg-gray-100">
+              Live demo{" "}
+              <span
+                class="text-gray-400"
+                aria-hidden="true">
+                &rarr;
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</>

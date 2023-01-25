@@ -1,0 +1,29 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import {Icon} from 'astro-icon'
+import { SITE_TITLE } from '../config';
+---
+
+<header>
+	<div class="fixed w-screen px-4 md:px-14 py-4 flex justify-between items-center bg-gray-50 bg-opacity-90 rounded-b-md shadow-lg z-50">
+        <div class="md:text-3xl text-xl font-BungeeShade text-cyan-800 drop-shadow-lg font-bold">
+			{SITE_TITLE}
+        </div>
+        <nav class="flex">
+			<!-- <HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink> -->
+
+          <div class="flex items-center space-x-3">
+            <button class="h-6 w-6 text-black">
+				<!-- Equivalent shorthand -->
+				<Icon name="mdi:account" />
+            </button>
+            <button class="h-6 w-6 text-black">
+				<!-- Equivalent shorthand -->
+				<Icon name="mdi:account" />
+            </button>
+          </div>
+        </nav>
+    </div>
+</header>
+
