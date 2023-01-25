@@ -3,8 +3,10 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/nav/Header.astro';
 import Footer from '../components/Footer.astro';
 import MainHero from '../components/heros/MainHero.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
-// import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import OrgHero from '../components/heros/OrgHero.astro';
+
+
+import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
 ---
 
 <!DOCTYPE html>
@@ -14,7 +16,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<MainHero />
+		<main class="flex flex-col">
+			<MainHero />
+			<OrgHero />
+		</main>
 
 		<!-- <main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
